@@ -46,7 +46,7 @@ addEventHandler("onPlayerLogin", root, onPlayerLogin)
 function onLoadPlayers()
     for _, player in ipairs(getElementsByType("player")) do
         local account = getPlayerAccount(player)
-        if account then
+        if account and not isGuestAccount(account) then
             local playerName = getAccountName(account)
             if playerName then
                 initializePlayerData(playerName)
