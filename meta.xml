@@ -1,1 +1,4 @@
-
+<meta>
+    <info author="henriquemartinez" description="Tracks the playtime of players on the MTA:SA server. Players can check their own playtime using the /mytime command, while all players can view the top 10 players with the most playtime using the /toptime command." version="1.0" name="time-counter" />
+    <script src="init.lua" type="server" />
+</meta>
